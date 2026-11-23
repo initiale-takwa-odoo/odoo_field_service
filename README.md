@@ -34,7 +34,7 @@ Module personnalisé développé sous **Odoo 19** dédié à la gestion complèt
 ![Contrôle et validation du chantier](static/description/screenshots/chantier2.png)
 
 ### 4. Bon d'intervention PDF (QWeb)
-*Génération automatique d'un rapport client prêt à imprimer, incluant les détails de l'intervention et le tampon officiel de l'entreprise.*
+*Génération automatique d'un rapport client prêt à imprimer, incluant les détails de l'intervention et le tampon officiel de l'entreprise*
 ![Rapport PDF avec tampon](static/description/screenshots/rapport_pdf.png)
 
 
