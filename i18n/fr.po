@@ -1,0 +1,655 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* odoo_field_service
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20260908\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-13 09:57+0000\n"
+"PO-Revision-Date: 2026-10-13 09:57+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.view_field_service_kanban
+msgid ""
+"<br/>\n"
+"                                    👤"
+msgstr ""
+
+#. module: odoo_field_service
+#: model:mail.template,body_html:odoo_field_service.email_template_field_service
+msgid ""
+"<div style=\"margin: 0px; padding: 0px; font-family: 'Segoe UI', sans-serif;\" data-oe-version=\"2.0\">\n"
+"                    <p style=\"border-radius:0px;border-style:none;box-sizing:border-box;border-left-color:#212529;border-bottom-color:#212529;border-right-color:#212529;border-top-color:#212529;border-left-width:0px;border-bottom-width:0px;border-right-width:0px;border-top-width:0px;margin: 0px; padding: 0px; font-size: 13px;\">Hello,</p><p style=\"border-radius:0px;border-style:none;box-sizing:border-box;border-left-color:#212529;border-bottom-color:#212529;border-right-color:#212529;border-top-color:#212529;border-left-width:0px;border-bottom-width:0px;border-right-width:0px;border-top-width:0px;margin: 0px; padding: 0px; font-size: 13px;\"><br/></p><p style=\"border-radius:0px;border-style:none;box-sizing:border-box;border-left-color:#212529;border-bottom-color:#212529;border-right-color:#212529;border-top-color:#212529;border-left-width:0px;border-bottom-width:0px;border-right-width:0px;border-top-width:0px;margin: 0px; padding: 0px; font-size: 13px;\">We inform you that your intervention has been successfully completed.&nbsp;</p><p style=\"border-radius:0px;border-style:none;box-sizing:border-box;border-left-color:#212529;border-bottom-color:#212529;border-right-color:#212529;border-top-color:#212529;border-left-width:0px;border-bottom-width:0px;border-right-width:0px;border-top-width:0px;margin: 0px; padding: 0px; font-size: 13px;\">Please find attached your official <strong style=\"border-radius:0px;border-style:none;padding:0px;margin:0px;box-sizing:border-box;border-left-color:#212529;border-bottom-color:#212529;border-right-color:#212529;border-top-color:#212529;border-left-width:0px;border-bottom-width:0px;border-right-width:0px;border-top-width:0px;font-weight:bolder;\">Intervention Sheet</strong>.</p><p style=\"border-radius:0px;border-style:none;box-sizing:border-box;border-left-color:#212529;border-bottom-color:#212529;border-right-color:#212529;border-top-color:#212529;border-left-width:0px;border-bottom-width:0px;border-right-width:0px;border-top-width:0px;margin: 0px; padding: 0px; font-size: 13px;\"><br/></p><p style=\"border-radius:0px;border-style:none;box-sizing:border-box;border-left-color:#212529;border-bottom-color:#212529;border-right-color:#212529;border-top-color:#212529;border-left-width:0px;border-bottom-width:0px;border-right-width:0px;border-top-width:0px;margin: 0px; padding: 0px; font-size: 13px;\">Best regards,</p><p style=\"border-radius:0px;border-style:none;box-sizing:border-box;border-left-color:#212529;border-bottom-color:#212529;border-right-color:#212529;border-top-color:#212529;border-left-width:0px;border-bottom-width:0px;border-right-width:0px;border-top-width:0px;margin: 0px; padding: 0px; font-size: 13px;\">The technical team<br/><br/></p>\n"
+"                </div>\n"
+"            "
+msgstr ""
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.report_field_service_template
+msgid ""
+"<small class=\"text-muted d-block mt-2\" style=\"font-size: 10px; font-"
+"style: italic;\">Write \"Read and approved\" before signing</small>"
+msgstr ""
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.report_field_service_template
+msgid ""
+"<span class=\"text-muted\" style=\"font-style: italic;\">No comments or "
+"technical report provided for this intervention.</span>"
+msgstr ""
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.report_field_service_template
+msgid "<span class=\"text-muted\">Customer:</span>"
+msgstr ""
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.report_field_service_template
+msgid "<span class=\"text-muted\">Email:</span>"
+msgstr ""
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.report_field_service_template
+msgid "<span class=\"text-muted\">End:</span>"
+msgstr ""
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.report_field_service_template
+msgid "<span class=\"text-muted\">Phone:</span>"
+msgstr ""
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.report_field_service_template
+msgid "<span class=\"text-muted\">Pricing: </span>"
+msgstr ""
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.report_field_service_template
+msgid "<span class=\"text-muted\">Priority:</span>"
+msgstr ""
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.report_field_service_template
+msgid "<span class=\"text-muted\">Start:</span>"
+msgstr ""
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.report_field_service_template
+msgid "<span class=\"text-muted\">Technician:</span>"
+msgstr ""
+
+#. module: odoo_field_service
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_service__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: odoo_field_service
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_service__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: odoo_field_service
+#: model:ir.model.fields.selection,name:odoo_field_service.selection__field_service__state__draft
+msgid "Brouillon"
+msgstr "draft"
+
+#. module: odoo_field_service
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_service__is_done
+msgid "Chantier Clôturé ?"
+msgstr ""
+
+#. module: odoo_field_service
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_service__partner_id
+msgid "Client concerné"
+msgstr ""
+
+#. module: odoo_field_service
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_service__worker_comment
+msgid "Commentaire de fin de chantier"
+msgstr ""
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.report_field_service_template
+msgid "Company Stamp:"
+msgstr "Cachet de l'Entreprise :"
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.view_field_service_form
+msgid "Complete Intervention ✅"
+msgstr "Clôturer l'Intervention ✅"
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.view_field_service_form
+msgid "Completed 🎉"
+msgstr "Terminé 🎉"
+
+#. module: odoo_field_service
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_service__create_uid
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_subtask__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: odoo_field_service
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_service__create_date
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_subtask__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.view_field_service_kanban
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.view_field_service_search
+msgid "Customer"
+msgstr "Client"
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.report_field_service_template
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.view_field_service_form
+msgid "Customer Details"
+msgstr "Détails Client"
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.report_field_service_template
+msgid "Customer Signature:"
+msgstr "Signature du Client :"
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.report_field_service_template
+msgid "Customer:"
+msgstr "Client :"
+
+#. module: odoo_field_service
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_service__deadline
+msgid "Date limite"
+msgstr "Date limite"
+
+#. module: odoo_field_service
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_service__start_datetime
+msgid "Date/Heure de début"
+msgstr "Date/Heure de début"
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.report_field_service_template
+msgid "Description / Technical Report"
+msgstr "Description / Rapport technique"
+
+#. module: odoo_field_service
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_service__currency_id
+msgid "Devise"
+msgstr "Devise"
+
+#. module: odoo_field_service
+#: model:ir.model.fields.selection,name:odoo_field_service.selection__field_service__day__sunday
+msgid "Dimanche"
+msgstr "Dimanche"
+
+#. module: odoo_field_service
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_service__display_name
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_subtask__display_name
+msgid "Display Name"
+msgstr "Nom d'affichage"
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.report_field_service_template
+msgid "Done"
+msgstr "Fait"
+
+#. module: odoo_field_service
+#: model:ir.model.fields.selection,name:odoo_field_service.selection__field_service__category__du
+msgid "Dépannage d'urgence 🚨"
+msgstr "Dépannage d'urgence 🚨"
+
+#. module: odoo_field_service
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_service__partner_email
+msgid "Email du client"
+msgstr "Email du client"
+
+#. module: odoo_field_service
+#: model:ir.model.fields.selection,name:odoo_field_service.selection__field_service__state__in_progress
+msgid "En Cours 🛠️"
+msgstr "En Cours 🛠️"
+
+#. module: odoo_field_service
+#: model:ir.model.fields.selection,name:odoo_field_service.selection__field_service__state__paused
+msgid "En Pause ⏸️"
+msgstr "En Pause ⏸️"
+
+#. module: odoo_field_service
+#: model:ir.model.fields.selection,name:odoo_field_service.selection__field_service__category__ec
+msgid "Entretien courant 🪛"
+msgstr "Entretien courant 🪛"
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.report_field_service_template
+msgid "Equipment / Tasks"
+msgstr "Équipements / Tâches"
+
+#. module: odoo_field_service
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_subtask__is_done
+msgid "Fait ?"
+msgstr "Fait ?"
+
+#. module: odoo_field_service
+#: model:ir.actions.report,name:odoo_field_service.action_report_field_service
+msgid "Fiche d'Intervention"
+msgstr "Fiche d'Intervention"
+
+#. module: odoo_field_service
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_service__message_follower_ids
+msgid "Followers"
+msgstr "Abonnés"
+
+#. module: odoo_field_service
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_service__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Abonnés (Partenaires)"
+
+#. module: odoo_field_service
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_service__has_message
+msgid "Has Message"
+msgstr "A un message"
+
+#. module: odoo_field_service
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_service__id
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_subtask__id
+msgid "ID"
+msgstr "ID"
+
+#. module: odoo_field_service
+#: model:ir.model.fields,help:odoo_field_service.field_field_service__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Si coché, de nouveaux messages demandent votre attention."
+
+#. module: odoo_field_service
+#: model:ir.model.fields,help:odoo_field_service.field_field_service__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Si coché, certains messages ont une erreur de livraison."
+
+#. module: odoo_field_service
+#: model:ir.model.fields.selection,name:odoo_field_service.selection__field_service__category__ins
+msgid "Installation 🛠️"
+msgstr "Installation 🛠️"
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.view_field_service_tree
+msgid "Int. No."
+msgstr "N° Interv."
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.view_field_service_form
+msgid "Intervention Management"
+msgstr "Gestion de l'Intervention"
+
+#. module: odoo_field_service
+#: model:mail.template,subject:odoo_field_service.email_template_field_service
+msgid "Intervention Sheet {{ object.code }}"
+msgstr "Fiche d'intervention {{ object.code }}"
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.report_field_service_template
+msgid "Intervention Sheets"
+msgstr "Fiche d'interventions"
+
+#. module: odoo_field_service
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_subtask__task_id
+msgid "Intervention principale"
+msgstr "Intervention principale"
+
+#. module: odoo_field_service
+#: model:ir.model,name:odoo_field_service.model_field_service
+msgid "Intervention à faire"
+msgstr "Intervention à faire"
+
+#. module: odoo_field_service
+#: model:ir.ui.menu,name:odoo_field_service.menu_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.view_field_service_tree
+msgid "Interventions"
+msgstr "Interventions"
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.view_field_service_graph
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.view_field_service_pivot
+msgid "Interventions Analysis"
+msgstr "Analyse des Interventions"
+
+#. module: odoo_field_service
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_service__message_is_follower
+msgid "Is Follower"
+msgstr "Est un abonné"
+
+#. module: odoo_field_service
+#: model:ir.model.fields.selection,name:odoo_field_service.selection__field_service__day__thursday
+msgid "Jeudi"
+msgstr "Jeudi"
+
+#. module: odoo_field_service
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_service__day
+msgid "Jour"
+msgstr "Jour"
+
+#. module: odoo_field_service
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_subtask__write_uid
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_service__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+#. module: odoo_field_service
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_service__write_date
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_subtask__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: odoo_field_service
+#: model:ir.model.fields.selection,name:odoo_field_service.selection__field_service__day__monday
+msgid "Lundi"
+msgstr "Lundi"
+
+#. module: odoo_field_service
+#: model:ir.model.fields.selection,name:odoo_field_service.selection__field_service__day__tuesday
+msgid "Mardi"
+msgstr "Mardi"
+
+#. module: odoo_field_service
+#: model:ir.model.fields.selection,name:odoo_field_service.selection__field_service__day__wednesday
+msgid "Mercredi"
+msgstr "Mercredi"
+
+#. module: odoo_field_service
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_service__message_has_error
+msgid "Message Delivery error"
+msgstr "Erreur d'envoi du message"
+
+#. module: odoo_field_service
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_service__message_ids
+msgid "Messages"
+msgstr "Messages"
+
+#. module: odoo_field_service
+#: model:mail.template,description:odoo_field_service.email_template_field_service
+msgid "Modèle d'envoi automatique de la fiche technique validée"
+msgstr "Modèle d'envoi automatique de la fiche technique validée"
+
+#. module: odoo_field_service
+#: model:ir.actions.act_window,name:odoo_field_service.action_field_service
+msgid "Mon Gestionnaire Terrain"
+msgstr "Mon Gestionnaire Terrain"
+
+#. module: odoo_field_service
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_service__price_subtotal
+msgid "Montant HT"
+msgstr "Montant HT"
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.view_field_service_form
+msgid "My Checklist / Technical Steps"
+msgstr "Ma Check-list / Étapes Techniques"
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.report_field_service_template
+msgid "Nature of Intervention"
+msgstr "Nature de l'intervention"
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.report_field_service_template
+msgid "No."
+msgstr "N°"
+
+#. module: odoo_field_service
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_service__name1
+msgid "Nom de chantier"
+msgstr "Nom de chantier"
+
+#. module: odoo_field_service
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_service__name
+msgid "Nom de l'Intervenant"
+msgstr "Nom de l'Intervenant"
+
+#. module: odoo_field_service
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_subtask__name
+msgid "Nom de la sous-tâche"
+msgstr "Nom de la sous-tâche"
+
+#. module: odoo_field_service
+#: model:ir.model.fields.selection,name:odoo_field_service.selection__field_service__priority__0
+msgid "Normale"
+msgstr "Normale"
+
+#. module: odoo_field_service
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_service__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Nombre d'actions"
+
+#. module: odoo_field_service
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_service__message_has_error_counter
+msgid "Number of errors"
+msgstr "Nombre d'erreurs"
+
+#. module: odoo_field_service
+#: model:ir.model.fields,help:odoo_field_service.field_field_service__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Nombre de messages nécessitant une action"
+
+#. module: odoo_field_service
+#: model:ir.model.fields,help:odoo_field_service.field_field_service__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Nombre de messages avec erreur de livraison"
+
+#. module: odoo_field_service
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_service__code
+msgid "Numéro d'intervention"
+msgstr "Numéro d'intervention"
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.report_field_service_template
+msgid "Observations"
+msgstr "Observations"
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.view_field_service_form
+msgid "Pause Project ⏸️"
+msgstr "Mettre en Pause ⏸️"
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.view_field_service_kanban
+msgid "Permanently delete this intervention?"
+msgstr "Supprimer définitivement cette intervention ?"
+
+#. module: odoo_field_service
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_service__time_slot
+msgid "Plage horaire"
+msgstr "Plage horaire"
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.report_field_service_template
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.view_field_service_form
+msgid "Planning"
+msgstr "Planification"
+
+#. module: odoo_field_service
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_service__priority
+msgid "Priorité"
+msgstr "Priorité"
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.view_field_service_form
+msgid "Rapport d'Intervention Fin de Chantier"
+msgstr "Rapport d'Intervention Fin de Chantier"
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.view_field_service_form
+msgid "Reopen Intervention 🔓"
+msgstr "Rouvrir l'intervention 🔓"
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.view_field_service_form
+msgid "Resume Work ▶️"
+msgstr "Reprendre le chantier ▶️"
+
+#. module: odoo_field_service
+#: model:ir.model.fields.selection,name:odoo_field_service.selection__field_service__category__r
+msgid "Réparation 🔧"
+msgstr "Réparation 🔧"
+
+#. module: odoo_field_service
+#: model:ir.model.fields,help:odoo_field_service.field_field_service__price_subtotal
+msgid "Saisissez le prix facturé pour cette intervention"
+msgstr "Saisissez le prix facturé pour cette intervention"
+
+#. module: odoo_field_service
+#: model:ir.model.fields.selection,name:odoo_field_service.selection__field_service__day__saturday
+msgid "Samedi"
+msgstr "Samedi"
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.view_field_service_search
+msgid "Search Interventions"
+msgstr "Rechercher des interventions"
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.view_field_service_form
+msgid "Send Sheet by Email ✉️"
+msgstr "Envoyer la fiche par Email ✉️"
+
+#. module: odoo_field_service
+#: model:mail.template,name:odoo_field_service.email_template_field_service
+msgid "Services Terrain : Envoi Fiche d'Intervention"
+msgstr "Services Terrain : Envoi Fiche d'Intervention"
+
+#. module: odoo_field_service
+#: model:ir.ui.menu,name:odoo_field_service.menu_service_root
+msgid "Services Terrain 🛠️"
+msgstr "Services Terrain 🛠️"
+
+#. module: odoo_field_service
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_service__company_id
+msgid "Société"
+msgstr "Société"
+
+#. module: odoo_field_service
+#: model:ir.model,name:odoo_field_service.model_field_subtask
+msgid "Sous-tâche Technique"
+msgstr "Sous-tâche Technique"
+
+#. module: odoo_field_service
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_service__subtask_ids
+msgid "Sous-tâches"
+msgstr "Sous-tâches"
+
+#. module: odoo_field_service
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_service__remaining_subtasks_count
+msgid "Sous-tâches restantes"
+msgstr "Sous-tâches restantes"
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.view_field_service_form
+msgid "Start Project 🛠️"
+msgstr "Démarrer le chantier 🛠️"
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.report_field_service_template
+msgid "Status"
+msgstr "Statut"
+
+#. module: odoo_field_service
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_service__state
+msgid "Statut"
+msgstr "Statut"
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.report_field_service_template
+msgid "TASK COMPLETED ON"
+msgstr "TÂCHE VALIDÉE LE"
+
+#. module: odoo_field_service
+#: model:ir.model.fields.selection,name:odoo_field_service.selection__field_service__state__done
+msgid "Terminé 🎉"
+msgstr "Terminé 🎉"
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.view_field_service_search
+msgid "Title"
+msgstr "Titre"
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.report_field_service_template
+msgid "To Do"
+msgstr "À faire"
+
+#. module: odoo_field_service
+#: model:ir.model.fields.selection,name:odoo_field_service.selection__field_service__day__anytime
+msgid "Toute la semaine"
+msgstr "Toute la semaine"
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.report_field_service_template
+msgid "Type"
+msgstr "Type"
+
+#. module: odoo_field_service
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_service__category
+msgid "Type d'Intervention"
+msgstr "Type d'Intervention"
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.view_field_service_form
+msgid "Type here your technical remarks for the customer..."
+msgstr "Tapez ici vos remarques techniques pour le client..."
+
+#. module: odoo_field_service
+#: model:ir.model.fields,field_description:odoo_field_service.field_field_service__partner_phone
+msgid "Téléphone du client"
+msgstr "Téléphone du client"
+
+#. module: odoo_field_service
+#: model:ir.model.fields.selection,name:odoo_field_service.selection__field_service__priority__1
+msgid "Urgent ⭐"
+msgstr "Urgent ⭐"
+
+#. module: odoo_field_service
+#: model:ir.model.fields.selection,name:odoo_field_service.selection__field_service__day__friday
+msgid "Vendredi"
+msgstr "Vendredi"
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.view_field_service_form
+msgid "Work Completed?"
+msgstr "Chantier Clôturé ?"
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.view_field_service_form
+msgid "e.g., Replace the seal, Test pressure..."
+msgstr "Ex: Remplacer le joint, Tester la pression..."
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.view_field_service_search
+msgid "⏸️ On Hold"
+msgstr "⏸️ En Pause"
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.view_field_service_search
+msgid "👤 Group by Customer"
+msgstr "👤 Regrouper par Client"
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.view_field_service_search
+msgid "🗂️ Group by Type"
+msgstr "🗂️ Regrouper par Métier"
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.view_field_service_search
+msgid "🚨 Emergencies"
+msgstr "🚨 Urgences"
+
+#. module: odoo_field_service
+#: model_terms:ir.ui.view,arch_db:odoo_field_service.view_field_service_search
+msgid "🛠️ In Progress"
+msgstr "🛠️ En Cours"
+
+#. module: odoo_field_service
+#: model:mail.template,subject:odoo_field_service.email_template_field_service
+msgid "Fiche d'intervention {{ object.code }}"
+msgstr "Fiche d'intervention {{ object.code }}"
+

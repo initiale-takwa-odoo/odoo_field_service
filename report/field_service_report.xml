@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- 🌟 L'ACTION QUI CRÉE LE BOUTON D'IMPRESSION -->
+        <record id="action_report_field_service" model="ir.actions.report">
+            <field name="name">Fiche d'Intervention</field>
+            <field name="model">field.service</field>
+            <field name="report_type">qweb-pdf</field> 
+            <field name="report_name">odoo_field_service.report_field_service_template</field>
+            <field name="report_file">odoo_field_service.report_field_service_template</field>
+            <field name="binding_model_id" ref="model_field_service"/>
+            <field name="binding_type">report</field> 
+        </record>
+
+        <!-- 🌟 LE DESIGN DE LA FICHE PDF (TEMPLATE) -->
+        <template id="report_field_service_template">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+                        <div class="page" style="color: #2D3748; font-size: 13px;">
+                            
+                            <!-- 1. TITRE ET RÉFÉRENCE UNIQUE (STYLE BUBBLE) -->
+                            <div class="row align-items-center mb-4 mt-2">
+                                <div class="col-7 text-start">
+                                    <h2 class="fw-bold m-0" style="color: var(--infos); letter-spacing: 0.5px; text-transform: uppercase; font-size: 26px;">Fiche d'interventions</h2>
+                                </div>
+                                <div class="col-5 text-end">
+                                    <h4 class="fw-bold m-0 text-muted" style="font-size: 16px;">N° <t t-out="o.code"/></h4>
+                                </div>
+                            </div>
+
+                            <!-- 2. BLOCS CLIENT & PLANNING SANS CONFLIT -->
+                            <div class="row mb-4">
+                                <!-- Case Gauche : Planification -->
+                                <div class="col-6 pe-3">
+                                    <div style="border: 1px solid #CBD5E1; border-radius: 12px; overflow: hidden; background-color: #F8FAFC; height: 135px; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
+                                        <div class="p-2 text-center text-white" style="background-color: var(--infos) !important; border-top-left-radius: 11px; border-top-right-radius: 11px;">
+                                            <h6 class="fw-bold text-uppercase m-0 text-white" style="font-size: 11px; letter-spacing: 0.5px;">Planification</h6>
+                                        </div>
+                                        <div class="p-3" style="line-height: 1.7;">
+                                            <div><span class="text-muted">Début :</span> <strong class="text-dark"><span t-field="o.day"/> (<span t-field="o.time_slot"/>)</strong></div>
+                                            <div><span class="text-muted">Fin :</span> <strong class="text-dark"><span t-field="o.day"/></strong></div>
+                                            <div><span class="text-muted">Intervenant :</span> <strong class="text-dark"><span t-field="o.name"/></strong></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Case Droite : Coordonnées Client (Gris Pur) -->
+                                <div class="col-6 ps-3">
+                                    <div style="border: 1px solid #CBD5E1; border-radius: 12px; overflow: hidden; background-color: #F8FAFC; height: 135px; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
+                                        <div class="p-2 text-center text-white" style="background-color: var(--infos) !important; border-top-left-radius: 11px; border-top-right-radius: 11px;">
+                                            <h6 class="fw-bold text-uppercase m-0 text-white" style="font-size: 11px; letter-spacing: 0.5px;">Coordonnées Client</h6>
+                                        </div>
+                                        <div class="p-3" style="line-height: 1.7;">
+                                            <div><span class="text-muted">Client :</span> <strong class="text-dark"><span t-field="o.partner_id.name"/></strong></div>
+                                            <t t-if="o.partner_phone">
+                                                <div><span class="text-muted">Tél :</span> <span t-field="o.partner_phone"/></div>
+                                            </t>
+                                            <t t-if="o.partner_email">
+                                                <div><span class="text-muted">Email :</span> <span t-field="o.partner_email"/></div>
+                                            </t>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 3. NATURE DE L'INTERVENTION & OBSERVATIONS -->
+                            <div class="row mb-4">
+                                <!-- Case Gauche : Nature de l'intervention -->
+                                <div class="col-6 pe-3">
+                                    <div style="border: 1px solid #CBD5E1; border-radius: 12px; overflow: hidden; background-color: #F8FAFC; height: 105px; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
+                                        <div class="p-2 text-center text-white" style="background-color: #0B3C5D; border-top-left-radius: 11px; border-top-right-radius: 11px;">
+                                            <h6 class="fw-bold text-uppercase m-0 text-white" style="font-size: 11px; letter-spacing: 0.5px; color: #FFFFFF !important;">Nature de l'intervention</h6>
+                                            
+                                        </div>
+                                        <div class="p-3">
+                                             <strong class="text-dark" style="color: #0B3C5D">
+                                               <!-- 1. On récupère le label (ex: 'Installation 🛠️') -->
+                                               <!-- 2. On filtre pour ne garder que les lettres, accents et espaces -->
+                                               <t t-set="label_complet" t-value="dict(o.fields_get(allfields=['category'])['category']['selection']).get(o.category) if o.category else ''"/>
+                                               <span t-out="''.join(c for c in label_complet if c.isalnum() or c.isspace() or c in ['-', '_', '\'', '(', ')', '/'])"/>
+                                             </strong>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Case Droite : Observations (Gris Pur) -->
+                                <!-- Case Droite : Observations avec Montant Financier Intégré -->
+                                <div class="col-6 ps-3">
+                                    <div style="border: 1px solid #CBD5E1; border-radius: 12px; overflow: hidden; background-color: #F8FAFC; height: 105px; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
+                                        <div class="p-2 text-center text-white" style="background-color: #0B3C5D; border-top-left-radius: 11px; border-top-right-radius: 11px;">
+                                            <h6 class="fw-bold text-uppercase m-0 text-white" style="font-size: 11px; letter-spacing: 0.5px; color: #FFFFFF !important;">Observations</h6>
+                                        </div>
+                                          
+                                            <div class="p-3" style="line-height: 1.6;">
+                                                <!--  La nouvelle version propre et nettoyée -->
+                                               <div><span class="text-muted">Priorité :</span> 
+                                                    <span t-out="''.join(c for c in dict(o.fields_get(allfields=['priority'])['priority']['selection']).get(o.priority) if c.isalnum() or c.isspace() or c in ['-', '_', '\'', '(', ')', '/']) if o.priority else ''"/>
+                                               </div>
+                                                <!-- 🌟 LE MONTANT HT AJOUTÉ DIRECTEMENT SUR LE PDF -->
+                                                <!-- 🌟 LA MAGIE INTERNATIONALE : Odoo affiche le prix ET le bon symbole (€, $, £) automatiquement selon la fiche ! -->
+                                               <div><span class="text-muted">Tarification : </span> <strong class="text-success"><span t-field="o.price_subtotal" t-options="{'widget': 'monetary', 'display_currency': o.currency_id}"/></strong>
+                                               </div>
+                                            </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- 5. LE BLOCK ÉQUIPEMENTS / SOUS-TÂCHES RECONSTRUIT SANS BALISE TABLE (SANS EFFET DOUBLE TABLEAU) -->
+                            <!-- 5. LE BLOCK ÉQUIPEMENTS / SOUS-TÂCHES RECONSTRUIT SANS BALISE TABLE (SANS EFFET DOUBLE TABLEAU) -->
+                            <div class="mb-4 shadow-sm" style="border: 1px solid #CBD5E1; border-radius: 12px; overflow: hidden;">
+                                <!-- En-tête fluide du tableau -->
+                                <div class="row g-0 p-2 fw-bold text-dark align-items-center" style="background-color: #0B3C5D; border-bottom: 2px solid #E2E8F0; font-size: 12px;">
+                                    <div class="col-6 text-start ps-2" style="color: #FFFFFF !important;">Équipements / Tâches</div>
+                                    <div class="col-3 text-center" style="color: #FFFFFF !important;">Statut</div>
+                                    <div class="col-3 text-center" style="color: #FFFFFF !important;">Type</div>
+                                </div>
+                                <!-- Lignes fluides générées dynamiquement -->
+                                <t t-foreach="o.subtask_ids" t-as="subtask">
+                                    <div class="row g-0 p-2 align-items-center" style="border-bottom: 1px solid #E2E8F0; background-color: #F8FAFC;">
+                                        <div class="col-6 text-start ps-2"><span t-field="subtask.name"/></div>
+                                        <div class="col-3 text-center">
+                                            <!-- Sécurisation : Texte brut sans émojis pour détruire définitivement les points d'interrogation (?) -->
+                                            <span t-if="subtask.is_done" style="color: #0B3C5D !important; font-weight: bold;">Fait</span>
+                                            <span t-if="not subtask.is_done" style="color: #fd7e14 !important; font-weight: bold;">À faire</span>
+                                        </div>
+                                        <div class="col-3 text-center text-secondary">—</div>
+                                    </div>
+                                </t>
+                            </div>
+
+                                                      <!-- 4. GRANDE CASE CENTRALE : DESCRIPTION (CORRECTION RETOUR À LA LIGNE FORCE) -->
+                            <div class="mb-4 text-start shadow-sm" style="border: 1px solid #CBD5E1; border-radius: 12px; overflow: hidden;">
+                                <div class="p-2 text-center text-white" style="background-color: #0B3C5D; border-top-left-radius: 11px; border-top-right-radius: 11px;">
+                                    <h6 class="fw-bold text-uppercase m-0 text-white" style="font-size: 11px; letter-spacing: 0.5px; color: #FFFFFF !important;">Description / Rapport technique</h6>
+                                </div>
+                                <!-- Modification : Ajout de word-break: break-all; pour forcer l'occupation complète de la ligne -->
+                                <div class="p-3" style="background-color: #F8FAFC; min-height: 120px; line-height: 1.6; display: block; vertical-align: top; text-align: left; word-break: break-all;">
+                                    <t t-if="o.worker_comment"><span style="white-space: pre-wrap;" t-field="o.worker_comment"/></t>
+                                    <t t-if="not o.worker_comment"><span class="text-muted" style="font-style: italic;">Aucun commentaire ou rapport technique renseigné pour cette intervention.</span></t>
+                                </div>
+                            </div>
+
+
+                            <!-- 6. ZONE DE SIGNATURE ET CACHET -->
+                            <div class="row mt-5 pt-3" style="page-break-inside: avoid;">
+                                <div class="col-6 text-start">
+                                    <p class="mb-4 text-dark fw-bold">Signature du Client :</p>
+                                    <div class="my-3" style="border-bottom: 1px dashed #4A5568; width: 85%; height: 60px;"/>
+                                    <small class="text-muted d-block mt-2" style="font-size: 10px; font-style: italic;">Précéder de la mention "Lu et approuvé"</small>
+                                </div>
+                                
+                                <div class="col-6 text-end d-flex flex-column align-items-end">
+                                    <p class="mb-4 text-dark text-end w-100 fw-bold">Cachet de l'Entreprise :</p>
+                                    
+                                    <t t-if="o.is_done">
+                                        <div class="text-center p-3 border border-success rounded text-success fw-bold" 
+                                             style="display: inline-block; transform: rotate(-2deg); -webkit-transform: rotate(-2deg); font-size: 12px; opacity: 0.9; background-color: #f7fdf7; border-width: 2px !important; width: 85%; max-width: 260px; letter-spacing: 0.5px;">
+                                            TÂCHE VALIDÉE LE <span t-out="time.strftime('%d/%m/%Y')"/><br/>
+                                            <span style="font-size: 10px; color: #38a169; text-transform: uppercase;">Client : <span t-field="o.partner_id.name"/></span>
+                                        </div>
+                                    </t>
+                                    <t t-if="not o.is_done">
+                                        <div class="d-inline-block" style="border: 1px dashed #4A5568; width: 85%; height: 80px; background-color: #fdfdfd; border-radius: 4px;"/>
+                                    </t>
+                                </div>
+                            </div>
+
+                        </div> <!-- Fin de .page -->
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>

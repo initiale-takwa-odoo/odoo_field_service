@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- 🔢 CONFIGURATION DE LA SÉQUENCE AUTOMATIQUE -->
+        <record id="sequence_field_service" model="ir.sequence">
+            <field name="name">Séquence des Interventions Terrain</field>
+            <field name="code">field.service</field>
+            <field name="prefix">INT/%(year)s/</field>
+            <field name="padding">4</field>
+            <field name="number_next">1</field>
+            <field name="number_increment">1</field>
+            <field name="company_id" eval="False"/>
+        </record>
+    </data>
+</odoo>
