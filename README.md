@@ -21,13 +21,21 @@ Module personnalisé développé sous **Odoo 19** dédié à la gestion complèt
 
 ## 📸 Aperçu de l'application
 
-### La vue Kanban ou Formulaire du chantier avec sa checklist
-![vue Kanban](static/description/screenshots/chantier.png)
-![Formulaire du chantier](static/description/screenshots/chantier1.png)
-![Formulaire du chantier controle](static/description/screenshots/chantier2.png)
+### 1. Pilotage de l'activité (Vue Kanban)
+*Suivi visuel de l'avancement des chantiers par étape, assignation des techniciens et alertes visuelles en temps réel.*
+![Vue Kanban des chantiers](static/description/screenshots/chantier.png)
 
-### Un aperçu du rapport PDF avec le tampon stylisé
-![Rapport](static/description/screenshots/rapport_pdf.png)
+### 2. Gestion détaillée d'une intervention & Checklist qualité
+*Fiche complète du chantier avec gestion multi-devis, suivi des étapes du workflow et checklist de contrôle obligatoire.*
+![Formulaire du chantier](static/description/screenshots/chantier1.png)
+
+### 3. Contrôles métier & Validation de clôture
+*Vérification automatique des conditions avant confirmation finale et déclenchement de l'envoi d'email au client.*
+![Contrôle et validation du chantier](static/description/screenshots/chantier2.png)
+
+### 4. Bon d'intervention PDF (QWeb)
+*Génération automatique d'un rapport client prêt à imprimer, incluant les détails de l'intervention et le tampon officiel de l'entreprise.*
+![Rapport PDF avec tampon](static/description/screenshots/rapport_pdf.png)
 
 
 ## 🚀 Installation
