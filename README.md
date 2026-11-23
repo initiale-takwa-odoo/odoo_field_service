@@ -19,6 +19,17 @@ Module personnalisé développé sous **Odoo 19** dédié à la gestion complèt
 * **Vues & Rapports :** XML, QWeb Reports
 * **Sécurité :** Groupes utilisateurs dédiés (`security/field_service_security.xml`) et règles d'accès (`ir.model.access.csv`)
 
+## 📸 Aperçu de l'application
+
+### La vue Kanban ou Formulaire du chantier avec sa checklist
+![vue Kanban](static/description/screenshots/chantier.png)
+![Formulaire du chantier](static/description/screenshots/chantier1.png)
+![Formulaire du chantier controle](static/description/screenshots/chantier2.png)
+
+### Un aperçu du rapport PDF avec le tampon stylisé
+![Rapport](static/description/screenshots/rapport_pdf.png)
+
+
 ## 🚀 Installation
 
 1. Cloner ce dépôt dans votre répertoire `custom_addons` :
